@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include "head.html" %}
+    </head>
+    <body>
+        <div class="px-0 container-fluid">
+            {% include "navbar.html" %}
+            {% if messages %}
+            {% include "messages.html" %}
+            {% endif %}
+            {% block body %}
+            {% endblock %}
+        </div>
+        {% include "footer.html" %}
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
