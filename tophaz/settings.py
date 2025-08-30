@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "shop",
     "mixes",
     "products",
+    "shows",
 ]
 
 MIDDLEWARE = [
